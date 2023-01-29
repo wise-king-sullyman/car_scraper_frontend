@@ -11,7 +11,7 @@ export const tesla = {
   sort: "list_price",
   stock_type: "all",
   trims: ["tesla-model_3-performance"],
-  year_max: "",
+  year_max: "2020",
   year_min: "",
   zip: 27599,
 };

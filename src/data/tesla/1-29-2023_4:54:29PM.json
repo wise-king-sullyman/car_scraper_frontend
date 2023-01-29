@@ -383,14 +383,6 @@
     "link": "https://cars.com/vehicledetail/9814f5ea-a3ea-4970-9027-b42905cf4805/"
   },
   {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "9348",
-    "price": "39900",
-    "distance": "1803",
-    "link": "https://cars.com/vehicledetail/e701cf3a-485d-47d5-bef5-fe10c56e2f89/"
-  },
-  {
     "title": "2018 Tesla Model 3 Performance",
     "type": "Used",
     "mileage": "32054",
@@ -1089,14 +1081,6 @@
     "link": "https://cars.com/vehicledetail/65f27c18-ddbf-4455-84b2-6d0854b8a748/"
   },
   {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "10473",
-    "price": "43000",
-    "distance": "1045",
-    "link": "https://cars.com/vehicledetail/be9cf531-d617-43a1-98c6-766b6d81df65/"
-  },
-  {
     "title": "2018 Tesla Model 3 Performance",
     "type": "Used",
     "mileage": "42775",
@@ -1215,14 +1199,6 @@
     "link": "https://cars.com/vehicledetail/14d49ad2-ad90-459a-9ebd-fc029412fd80/"
   },
   {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "45875",
-    "price": "43955",
-    "distance": "1040",
-    "link": "https://cars.com/vehicledetail/fc652873-ffd3-4f9a-848a-b56af4a1e3c4/"
-  },
-  {
     "title": "2020 Tesla Model 3 Performance",
     "type": "Used",
     "mileage": "32869",
@@ -1310,28 +1286,12 @@
     "link": "https://cars.com/vehicledetail/76adeab7-6a40-4340-b5d9-c0ef4983e62d/"
   },
   {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "35460",
-    "price": "44480",
-    "distance": "1037",
-    "link": "https://cars.com/vehicledetail/51e9408b-77ac-42be-aba1-6d92fa46b604/"
-  },
-  {
     "title": "2019 Tesla Model 3 Performance",
     "type": "Used",
     "mileage": "5352",
     "price": "44500",
     "distance": "2354",
     "link": "https://cars.com/vehicledetail/15c94fe9-6849-4cce-b871-42013ed9d603/"
-  },
-  {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "525",
-    "price": "44500",
-    "distance": "1062",
-    "link": "https://cars.com/vehicledetail/c79ea299-cf1d-4de5-a9ce-6c54c1d45198/"
   },
   {
     "title": "2020 Tesla Model 3 Performance",
@@ -1397,28 +1357,12 @@
     "link": "https://cars.com/vehicledetail/cadc48bc-1f68-489a-93fd-b881bcade8e1/"
   },
   {
-    "title": "2022 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "27599",
-    "price": "44926",
-    "distance": "1035",
-    "link": "https://cars.com/vehicledetail/7cd5ec2e-4c3f-424d-b9fb-d3049d9714ac/"
-  },
-  {
     "title": "2020 Tesla Model 3 Performance",
     "type": "Used",
     "mileage": "19302",
     "price": "44980",
     "distance": "215",
     "link": "https://cars.com/vehicledetail/0879d516-e65d-44ad-bac9-a8c42d04e73e/"
-  },
-  {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "49355",
-    "price": "44987",
-    "distance": "2158",
-    "link": "https://cars.com/vehicledetail/76d97d61-d71e-48eb-a395-60b3de9068ed/"
   },
   {
     "title": "2018 Tesla Model 3 Performance",
@@ -1485,14 +1429,6 @@
     "link": "https://cars.com/vehicledetail/eef1d4f6-29d2-4cc3-9417-2f9dea67dda9/"
   },
   {
-    "title": "2022 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "13050",
-    "price": "44995",
-    "distance": "2310",
-    "link": "https://cars.com/vehicledetail/f47a792d-b39d-44bf-8c65-5a3a37e8f18c/"
-  },
-  {
     "title": "2020 Tesla Model 3 Performance",
     "type": "Used",
     "mileage": "30930",
@@ -1531,14 +1467,6 @@
     "price": "45000",
     "distance": "758",
     "link": "https://cars.com/vehicledetail/9088d4d7-82f8-4ff3-92c8-aeb6be5caabe/"
-  },
-  {
-    "title": "2021 Tesla Model 3 Performance",
-    "type": "Used",
-    "mileage": "1830",
-    "price": "45000",
-    "distance": "2005",
-    "link": "https://cars.com/vehicledetail/713b2e15-416a-4e0d-8028-9635dfe75776/"
   },
   {
     "title": "2020 Tesla Model 3 Performance",
@@ -1587,5 +1515,75 @@
     "price": "45500",
     "distance": "from",
     "link": "https://cars.com/vehicledetail/8c490b6f-79ef-4019-baea-17a160642838/"
+  },
+  {
+    "title": "2019 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "13089",
+    "price": "45590",
+    "link": "https://cars.com/vehicledetail/9e9175ee-fd3b-45d8-9703-efbea5765743/"
+  },
+  {
+    "title": "2020 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "41690",
+    "price": "45590",
+    "link": "https://cars.com/vehicledetail/1cead156-d126-41c0-9f6d-f3ad349a9457/"
+  },
+  {
+    "title": "2018 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "19669",
+    "price": "45593",
+    "distance": "371",
+    "link": "https://cars.com/vehicledetail/bed4a91b-98de-414d-b4ad-a98613db75ef/"
+  },
+  {
+    "title": "2020 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "34582",
+    "price": "45890",
+    "distance": "533",
+    "link": "https://cars.com/vehicledetail/33af87c3-790f-4e66-97aa-234cf5ef534d/"
+  },
+  {
+    "title": "2020 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "6387",
+    "price": "45896",
+    "distance": "692",
+    "link": "https://cars.com/vehicledetail/751b3bbf-57ff-46f3-bf61-3e778753e528/"
+  },
+  {
+    "title": "2019 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "20500",
+    "price": "45900",
+    "distance": "from",
+    "link": "https://cars.com/vehicledetail/479c2db3-e0dc-46db-8f4c-a7b4ba9acce2/"
+  },
+  {
+    "title": "2020 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "27745",
+    "price": "45900",
+    "distance": "1910",
+    "link": "https://cars.com/vehicledetail/a571125b-13ae-4055-bdb7-0fa6002d1305/"
+  },
+  {
+    "title": "2020 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "23327",
+    "price": "45977",
+    "distance": "383",
+    "link": "https://cars.com/vehicledetail/4abcdb72-aac5-408c-a809-151ff9c41ef5/"
+  },
+  {
+    "title": "2020 Tesla Model 3 Performance",
+    "type": "Used",
+    "mileage": "15418",
+    "price": "45980",
+    "distance": "981",
+    "link": "https://cars.com/vehicledetail/24e82fe1-d98d-4256-a846-22fbdb93cc50/"
   }
 ]
