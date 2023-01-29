@@ -9,7 +9,12 @@ function extractDetailedInfo(detail) {
       case "distance":
         return node?.textContent?.split(" ")[6];
       case "link":
-        return 'https://cars.com' + node?.attrs.href;
+        return "https://cars.com" + node?.attrs.href;
+      case "price":
+        if (node?.textContent?.includes("$")) {
+          return node?.textContent?.slice(1).replace(",", "");
+        }
+        break;
       default:
         return node?.textContent;
     }
@@ -18,7 +23,7 @@ function extractDetailedInfo(detail) {
   const title = getByQuerySelector(".title");
   const type = getByQuerySelector(".stock-type");
   const mileage = getByQuerySelector(".mileage");
-  const price = getByQuerySelector(".primary-price");
+  const price = getByQuerySelector(".primary-price", "price");
   const distance = getByQuerySelector(".miles-from", "distance");
   const link = getByQuerySelector(".vehicle-card-link", "link");
 
