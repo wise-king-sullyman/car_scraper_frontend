@@ -2,15 +2,17 @@ import get from "axios";
 import { parse } from "node-html-parser";
 
 function extractDetailedInfo(detail) {
-  function getByQuerySelector(selector, type) {
+  function getByQuerySelector(selector) {
     const node = detail.querySelector(selector);
 
-    switch (type) {
-      case "distance":
-        return node?.textContent?.split(" ")[6];
-      case "link":
+    switch (selector) {
+      case ".mileage":
+        return node?.textContent.split(' ')[0].replace(',', '')
+      case ".miles-from":
+        return node?.textContent?.split(" ")[6].replace(",", "");
+      case ".vehicle-card-link":
         return "https://cars.com" + node?.attrs.href;
-      case "price":
+      case ".primary-price":
         if (node?.textContent?.includes("$")) {
           return node?.textContent?.slice(1).replace(",", "");
         }
@@ -23,9 +25,9 @@ function extractDetailedInfo(detail) {
   const title = getByQuerySelector(".title");
   const type = getByQuerySelector(".stock-type");
   const mileage = getByQuerySelector(".mileage");
-  const price = getByQuerySelector(".primary-price", "price");
-  const distance = getByQuerySelector(".miles-from", "distance");
-  const link = getByQuerySelector(".vehicle-card-link", "link");
+  const price = getByQuerySelector(".primary-price");
+  const distance = getByQuerySelector(".miles-from");
+  const link = getByQuerySelector(".vehicle-card-link");
 
   return { title, type, mileage, price, distance, link };
 }
