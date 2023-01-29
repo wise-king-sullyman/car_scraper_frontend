@@ -4,10 +4,11 @@ function buildUrl(params) {
   const fullParams = Object.keys(params).reduce((acc, param) => {
     const value = params[param];
     if (typeof value === "object") {
-      return value.reduce(
-        (acc, subParam) => `${acc}&${param}[]=${subParam}`,
+      const arrayValue = value.reduce(
+        (valueAcc, subParam) => `${valueAcc}&${param}[]=${subParam}`,
         ""
       );
+      return `${acc}&${param}=${arrayValue}`;
     } else {
       return `${acc}&${param}=${value}`;
     }
