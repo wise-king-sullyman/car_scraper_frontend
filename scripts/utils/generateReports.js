@@ -10,14 +10,14 @@ function writeReport(data, carName) {
     .replaceAll("/", "-")
     .replaceAll(",", "_")
     .replaceAll(" ", "");
-  const outputPathBase = path.join(process.cwd(), 'src', "data");
+  const outputPathBase = path.join(process.cwd(), 'src', "data", carName);
 
   if (!existsSync(outputPathBase)) {
     mkdirSync(outputPathBase);
   }
 
   writeFileSync(
-    path.join(outputPathBase, `${carName}-${formattedDateTime}.json`),
+    path.join(outputPathBase, `${formattedDateTime}.json`),
     JSON.stringify(data)
   );
 
