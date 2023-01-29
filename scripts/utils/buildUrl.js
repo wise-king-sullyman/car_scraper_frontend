@@ -1,6 +1,6 @@
 const urlBase = "https://www.cars.com/shopping/results/?";
 
-function buildUrl(params) {
+export function buildUrl(params) {
   const fullParams = Object.keys(params).reduce((acc, param) => {
     const value = params[param];
     if (typeof value === "object") {
@@ -15,5 +15,3 @@ function buildUrl(params) {
   }, "");
   return urlBase + fullParams.slice(1);
 }
-
-export default buildUrl

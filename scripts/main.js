@@ -1,11 +1,10 @@
 import { writeFileSync } from "fs";
 import process from "process";
 
-import s60Params from "./volvo.js";
-import buildUrl from "./buildUrl.js";
-import fetchData from "./fetchData.js";
+import * as cars from "./searchParameters/index.js";
+import { buildUrl, fetchData } from './utils/index.js'
 
-const url = buildUrl(s60Params);
+const url = buildUrl(cars.volvo);
 
 console.log(await fetchData(url));
 // const dateTime = new Date().toLocaleString();

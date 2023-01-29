@@ -23,7 +23,7 @@
 // &year_min=2022
 // &zip=27599'
 
-const params = {
+export const volvo = {
   dealer_id: "",
   keyword: "",
   list_price_max: "",
@@ -54,5 +54,3 @@ const params = {
   year_min: 2022,
   zip: 27599,
 };
-
-export default params

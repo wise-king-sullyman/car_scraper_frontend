@@ -25,7 +25,7 @@ function extractDetailedInfo(detail) {
   return { title, type, mileage, price, distance, link };
 }
 
-async function fetchData(url) {
+export async function fetchData(url) {
   const data = await get(url).then((res) => res.data);
 
   const root = parse(data);
@@ -36,5 +36,3 @@ async function fetchData(url) {
 
   return aggregated_info;
 }
-
-export default fetchData;
