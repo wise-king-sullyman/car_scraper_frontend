@@ -11,7 +11,7 @@
     "title": "2022 Volvo S60 Recharge Plug-In Hybrid T8 Black Edition R-Design Extended Range",
     "type": "Used",
     "mileage": "7268",
-    "price": "49355",
+    "price": "49155",
     "distance": "776",
     "link": "https://cars.com/vehicledetail/05582327-6b6e-4134-bcad-bd87c2f061ba/"
   },
@@ -30,6 +30,13 @@
     "price": "52141",
     "distance": "2372",
     "link": "https://cars.com/vehicledetail/2bf9df5e-e337-4c6b-aa41-dcdac006201a/"
+  },
+  {
+    "title": "2023 Volvo S60 Recharge Plug-In Hybrid Plus Dark Theme",
+    "type": "New",
+    "price": "52922",
+    "distance": "304",
+    "link": "https://cars.com/vehicledetail/b0e3c9bb-ee48-40c7-ae4a-12ba0d321a67/"
   },
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
@@ -90,13 +97,6 @@
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
     "type": "New",
-    "price": "58340",
-    "distance": "278",
-    "link": "https://cars.com/vehicledetail/412e3b00-d1d4-4dd8-b194-43110a812a68/"
-  },
-  {
-    "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
-    "type": "New",
     "price": "58450",
     "distance": "478",
     "link": "https://cars.com/vehicledetail/df90148c-2ee1-445e-9672-adbf7e18d796/"
@@ -112,15 +112,15 @@
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Black Edition",
     "type": "New",
     "price": "59070",
-    "distance": "579",
-    "link": "https://cars.com/vehicledetail/0ade98d2-1379-43ad-8245-517f9992cd20/"
+    "distance": "478",
+    "link": "https://cars.com/vehicledetail/ddcb77f4-2812-46f2-81f1-04e89a08bebc/"
   },
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Black Edition",
     "type": "New",
     "price": "59070",
-    "distance": "478",
-    "link": "https://cars.com/vehicledetail/ddcb77f4-2812-46f2-81f1-04e89a08bebc/"
+    "distance": "579",
+    "link": "https://cars.com/vehicledetail/0ade98d2-1379-43ad-8245-517f9992cd20/"
   },
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Black Edition",
@@ -128,13 +128,6 @@
     "price": "59765",
     "distance": "382",
     "link": "https://cars.com/vehicledetail/3be76da3-8ce6-4f52-86b4-095b9055d41e/"
-  },
-  {
-    "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Black Edition",
-    "type": "New",
-    "price": "59895",
-    "distance": "2218",
-    "link": "https://cars.com/vehicledetail/999a2109-30de-4919-a697-d44af23a03fe/"
   },
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Black Edition",
@@ -149,13 +142,6 @@
     "price": "60520",
     "distance": "2239",
     "link": "https://cars.com/vehicledetail/cd6e1ec4-0f53-4a99-b0cd-95d1c6d53410/"
-  },
-  {
-    "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Ultimate Bright Theme",
-    "type": "New",
-    "price": "63015",
-    "distance": "358",
-    "link": "https://cars.com/vehicledetail/b38d04c9-2328-4f1d-9179-28ec48987996/"
   },
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
@@ -182,13 +168,6 @@
     "link": "https://cars.com/vehicledetail/ee90acbd-b547-4eb4-b7bb-d7cc6ca2c899/"
   },
   {
-    "title": "2023 Volvo S60 Recharge Plug-In Hybrid Plus Dark Theme",
-    "type": "New",
-    "price": "52922",
-    "distance": "304",
-    "link": "https://cars.com/vehicledetail/b0e3c9bb-ee48-40c7-ae4a-12ba0d321a67/"
-  },
-  {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
     "type": "New",
     "price": "53135",
@@ -206,9 +185,23 @@
   {
     "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
     "type": "New",
+    "price": "56340",
+    "distance": "308",
+    "link": "https://cars.com/vehicledetail/7e5654a3-07a8-47c2-aec3-3c6e39805ed9/"
+  },
+  {
+    "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
+    "type": "New",
     "price": "56540",
     "distance": "686",
     "link": "https://cars.com/vehicledetail/0583369d-d620-48c0-9919-238f3f68d921/"
+  },
+  {
+    "title": "2023 Volvo S60 Recharge Plug-In Hybrid T8 Plus Dark Theme",
+    "type": "New",
+    "price": "56540",
+    "distance": "509",
+    "link": "https://cars.com/vehicledetail/0efd90ec-755b-4983-a6af-47c45ecab21c/"
   },
   {
     "title": "2022 Volvo S60 Recharge Plug-In Hybrid T8 R-Design Extended Range",
