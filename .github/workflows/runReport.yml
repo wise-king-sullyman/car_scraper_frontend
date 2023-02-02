@@ -1,9 +1,8 @@
 name: Generate a report
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '0 18 * * * *'
 
 jobs:
   run_report:
@@ -14,7 +13,6 @@ jobs:
       REPO: ${{ github.event.repository.name }}
     steps:
       - uses: actions/checkout@v3
-      - run: git switch -c temp
       - uses: actions/setup-node@v1
         with:
           node-version: '18'
@@ -24,5 +22,4 @@ jobs:
       - run: git config user.email "wise.king.sullyman@gmail.com"
       - run: git add .
       - run: git commit -m "Run report"
-      - run: git push origin temp
-      - run: gh pr create -f
+      - run: git push origin main
