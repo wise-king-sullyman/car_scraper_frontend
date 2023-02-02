@@ -24,4 +24,5 @@ jobs:
       - run: git config user.email "wise.king.sullyman@gmail.com"
       - run: git add .
       - run: git commit -m "Run report"
+      - run: git push origin temp
       - run: gh pr create -f
