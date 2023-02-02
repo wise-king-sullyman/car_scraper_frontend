@@ -1,9 +1,9 @@
 name: Generate a report
 
 on:
-  issues:
-    types:
-      - opened
+  push:
+    branches:
+      - main
 
 jobs:
   run_report:
@@ -13,6 +13,7 @@ jobs:
       OWNER: ${{ github.repository_owner }}
       REPO: ${{ github.event.repository.name }}
     steps:
+      - uses: actions/checkout@v3
       - run: git branch -D temp
       - run: git switch -c temp
       - uses: actions/setup-node@v1
