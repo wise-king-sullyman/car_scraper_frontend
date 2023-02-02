@@ -1,0 +1,25 @@
+name: Generate a report
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  run_report:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      OWNER: ${{ github.repository_owner }}
+      REPO: ${{ github.event.repository.name }}
+    steps:
+      - run: git branch -D temp
+      - run: git switch -c temp
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '18'
+      - run: npm i
+      - run: npm run report
+      - run: git add .
+      - run: git commit -m "Run report"
+      - run: gh pr create -f
