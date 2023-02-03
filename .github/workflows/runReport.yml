@@ -2,7 +2,7 @@ name: Generate a report
 
 on:
   schedule:
-    - cron: '07 23 * * *'
+    - cron: '48 22 * * *'
 
 jobs:
   run_report:
