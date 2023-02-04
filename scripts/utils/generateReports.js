@@ -10,7 +10,7 @@ function writeReport(data, carName) {
     .replaceAll("/", "-")
     .replaceAll(",", "_")
     .replaceAll(" ", "");
-  const outputPathBase = path.join(process.cwd(), 'src', "data", carName);
+  const outputPathBase = path.join(process.cwd(), 'backend', "data", carName);
 
   if (!existsSync(outputPathBase)) {
     mkdirSync(outputPathBase);
