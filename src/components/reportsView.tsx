@@ -16,13 +16,35 @@ export interface car extends partialInfoCar {
   distance: string;
 }
 
-const CarCard = (car: partialInfoCar) => {
+export interface CarPriceChange extends car {
+  price: never;
+  oldPrice: string;
+  newPrice: string;
+}
+
+const CarCard = (car: partialInfoCar | CarPriceChange) => {
+  if ("oldPrice" in car) {
+    return (
+      <Card>
+        <CardTitle>{car.title}</CardTitle>
+        <CardBody>Previous Price: ${car.oldPrice}</CardBody>
+        <CardBody>New Price: ${car.newPrice}</CardBody>
+        <CardBody>Difference: ${parseInt(car.newPrice) - parseInt(car.oldPrice)}</CardBody>
+        <CardBody>Mileage: {car.mileage}</CardBody>
+        <CardBody>Distance: {car.distance}</CardBody>
+        <CardBody>
+          <a href={car.link}>{car.link}</a>
+        </CardBody>
+      </Card>
+    );
+  }
+
   return (
     <Card>
       <CardTitle>{car.title}</CardTitle>
-      <CardBody>{car.price}</CardBody>
-      <CardBody>{car.mileage}</CardBody>
-      <CardBody>{car.distance}</CardBody>
+      <CardBody>Price: {car.price}</CardBody>
+      <CardBody>Mileage: {car.mileage}</CardBody>
+      <CardBody>Distance: {car.distance}</CardBody>
       <CardBody>
         <a href={car.link}>{car.link}</a>
       </CardBody>

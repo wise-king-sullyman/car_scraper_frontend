@@ -1,17 +1,17 @@
 import React from "react";
-import { ReportSelector } from "../components";
-import { ReportsView, partialInfoCar } from "../components/reportsView";
+import { partialInfoCar, ReportDiffer, ReportSelector } from "../components";
 
 export const Main: React.FunctionComponent = () => {
+  const [reports, setReports] = React.useState<string[][]>();
 
   function onReportsSelected(firstReport: string[], secondReport: string[]) {
-    console.log(firstReport);
-    console.log(secondReport);
+    setReports([firstReport, secondReport]);
   }
 
   return (
     <div>
       <ReportSelector onReportsSelected={onReportsSelected} />
+      {reports &&<ReportDiffer reports={reports as unknown as partialInfoCar[][]} />}
     </div>
   );
 };
