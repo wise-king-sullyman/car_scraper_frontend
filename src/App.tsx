@@ -1,70 +1,51 @@
 import React from "react";
-import volvos from "./data/volvo/1-29-2023_4:54:26PM.json";
-import teslas from "./data/tesla/1-29-2023_4:54:29PM.json";
+import { Selector } from "./components/selector";
+import { ReportsView, partialInfoCar } from "./components/reportsView";
 
-interface partialInfoCar {
-  title: string;
-  type: string;
-  mileage?: string;
-  price?: string;
-  distance?: string;
-  link: string;
+const serverAddress = "http://162.243.172.239";
+// const serverAddress = 'http://localhost:3001/'
+
+function getIndex(make: string) {
+  return fetch(`${serverAddress}/${make}`).then((res) => res.text());
 }
 
-interface car extends partialInfoCar {
-  mileage: string;
-  price: string;
-  distance: string;
-}
-
-function filtercars(cars: partialInfoCar[]) {
-  return cars.filter((car): car is car =>
-    car.mileage && car.price && car.distance ? true : false
-  );
-}
-
-function getAveragePrice(cars: car[]) {
-  const sum = cars.reduce((acc, car) => acc + parseInt(car.price), 0);
-  return sum / cars.length;
-}
-
-function getMeanPrice(cars: car[]) {
-  const mean = Math.round(cars.length / 2)
-  return cars[mean].price
-}
-
-function getMake(cars: car[]) {
-  const isTesla = cars.find((car) => car.title.includes("Tesla"));
-  return isTesla ? "Tesla" : "Volvo";
-}
-
-function formatInfo(cars: partialInfoCar[]) {
-  const filteredCars = filtercars(cars);
-  const count = filteredCars.length
-  const lowPrice = parseInt(filteredCars[0].price)
-  const highPrice = parseInt(filteredCars[count - 1].price)
-  const priceRange = highPrice - lowPrice
-
-  return (
-    <div>
-      <h3>{getMake(filteredCars)}</h3>
-      <p>total samples: {filteredCars.length}</p>
-      <p>average price: {getAveragePrice(filteredCars)}</p>
-      <p>mean price: {getMeanPrice(filteredCars)}</p>
-      <p>low price: {lowPrice}</p>
-      <p>high price: {highPrice}</p>
-      <p>price range: {priceRange}</p>
-    </div>
+function getReport(make: string, reportNumber: number) {
+  return fetch(`${serverAddress}/${make}/${reportNumber}`).then((res) =>
+    res.text()
   );
 }
 
 function App() {
+  const [selectedMake, setSelectedMake] = React.useState<string>("");
+  const [reportIndex, setReportIndex] = React.useState<string[]>([]);
+  const [report, setReport] = React.useState<string[]>([]);
+
+  const makes = ["tesla", "volvo"];
+  function handleMakeSelect(_event: any, itemId: any) {
+    setSelectedMake(itemId);
+  }
+
+  async function handleReportSelect(_event: any, itemId: any) {
+    const reportNumber = reportIndex.findIndex((reportName) =>
+      reportName.includes(itemId)
+    );
+    const report = await getReport(selectedMake, reportNumber);
+    setReport(JSON.parse(report));
+  }
+
+  React.useEffect(() => {
+    if (selectedMake) {
+      getIndex(selectedMake).then((text) => setReportIndex(JSON.parse(text)));
+    }
+  }, [selectedMake]);
+
   return (
     <div className="App">
-      {formatInfo(volvos)}
-      <br />
-      <br />
-      {formatInfo(teslas)}
+      Select make:
+      {<Selector onSelect={handleMakeSelect}>{makes}</Selector>}
+      Select report date:
+      {<Selector onSelect={handleReportSelect}>{reportIndex}</Selector>}
+      {<ReportsView>{report as unknown as partialInfoCar[]}</ReportsView>}
     </div>
   );
 }
