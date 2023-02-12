@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "homepage": "https://wise-king-sullyman.github.io/car_scraper_frontend/",
+  "homepage": "https://scraper.bullcitysoftware.com",
   "dependencies": {
     "@patternfly/patternfly": "^4.224.2",
     "@patternfly/react-core": "^4.276.6",
