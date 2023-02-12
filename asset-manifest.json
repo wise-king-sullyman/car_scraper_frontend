@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/car_scraper_frontend/static/css/main.ea2f463e.css",
-    "main.js": "/car_scraper_frontend/static/js/main.8b0b46ac.js",
+    "main.js": "/car_scraper_frontend/static/js/main.9af27d16.js",
     "static/js/787.258ba93a.chunk.js": "/car_scraper_frontend/static/js/787.258ba93a.chunk.js",
     "static/media/pfbg_992@2x.jpg": "/car_scraper_frontend/static/media/pfbg_992@2x.30e8d31f821a144fe52c.jpg",
     "static/media/pfbg_768@2x.jpg": "/car_scraper_frontend/static/media/pfbg_768@2x.eea28e73c0df6dbbb1ff.jpg",
@@ -76,11 +76,11 @@
     "static/media/status-icon-sprite.svg": "/car_scraper_frontend/static/media/status-icon-sprite.4fee9fefc3971799d2dd.svg",
     "index.html": "/car_scraper_frontend/index.html",
     "main.ea2f463e.css.map": "/car_scraper_frontend/static/css/main.ea2f463e.css.map",
-    "main.8b0b46ac.js.map": "/car_scraper_frontend/static/js/main.8b0b46ac.js.map",
+    "main.9af27d16.js.map": "/car_scraper_frontend/static/js/main.9af27d16.js.map",
     "787.258ba93a.chunk.js.map": "/car_scraper_frontend/static/js/787.258ba93a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea2f463e.css",
-    "static/js/main.8b0b46ac.js"
+    "static/js/main.9af27d16.js"
   ]
 }
