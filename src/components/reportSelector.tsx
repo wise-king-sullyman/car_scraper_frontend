@@ -11,6 +11,7 @@ export const ReportSelector: React.FunctionComponent<ReportSelectorProps> = ({
   const [selectedMake, setSelectedMake] = React.useState<string>("");
   const [reportIndex, setReportIndex] = React.useState<string[]>([]);
   const [firstReportDate, setFirstReportDate] = React.useState<string>();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [secondReportDate, setSecondReportDate] = React.useState<string>();
   const [secondReportOptions, setSecondReportOptions] = React.useState<
     string[]
