@@ -8,6 +8,7 @@ export interface ReportSelectorProps {
 export const ReportSelector: React.FunctionComponent<ReportSelectorProps> = ({
   onReportsSelected,
 }: ReportSelectorProps) => {
+  const [makes, setMakes] = React.useState<string[]>([]);
   const [selectedMake, setSelectedMake] = React.useState<string>("");
   const [reportIndex, setReportIndex] = React.useState<string[]>([]);
   const [firstReportDate, setFirstReportDate] = React.useState<string>();
@@ -22,6 +23,12 @@ export const ReportSelector: React.FunctionComponent<ReportSelectorProps> = ({
   const serverAddress = "https://scrapi.bullcitysoftware.com";
   // const serverAddress = 'http://localhost:3001/'
 
+  async function getMakes() {
+    fetch(serverAddress)
+      .then((res) => res.text())
+      .then((makes) => setMakes(JSON.parse(makes)));
+  }
+
   function getIndex(make: string) {
     return fetch(`${serverAddress}/${make}`).then((res) => res.text());
   }
@@ -32,8 +39,6 @@ export const ReportSelector: React.FunctionComponent<ReportSelectorProps> = ({
     );
   }
 
-  // TODO add call to get available makes once that functionality is on the backend
-  const makes = ["tesla", "volvo"];
   function handleMakeSelect(_event: any, itemId: any) {
     setSelectedMake(itemId);
   }
@@ -50,6 +55,10 @@ export const ReportSelector: React.FunctionComponent<ReportSelectorProps> = ({
     const report = await getReport(selectedMake, reportNumber);
     setReportCB(JSON.parse(report));
   }
+
+  React.useEffect(() => {
+    getMakes();
+  }, []);
 
   React.useEffect(() => {
     if (selectedMake) {
