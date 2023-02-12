@@ -19,7 +19,7 @@ export const ReportSelector: React.FunctionComponent<ReportSelectorProps> = ({
   const [firstReport, setFirstReport] = React.useState<string[]>([]);
   const [secondReport, setSecondReport] = React.useState<string[]>([]);
 
-  const serverAddress = "http://162.243.172.239";
+  const serverAddress = "https://scrapi.bullcitysoftware.com";
   // const serverAddress = 'http://localhost:3001/'
 
   function getIndex(make: string) {
