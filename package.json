@@ -1,8 +1,9 @@
 {
-  "name": "car_scraper",
+  "name": "car_scraper_frontend",
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "homepage": "https://wise-king-sullyman.github.io/car_scraper_frontend/",
   "dependencies": {
     "@patternfly/patternfly": "^4.224.2",
     "@patternfly/react-core": "^4.276.6",
